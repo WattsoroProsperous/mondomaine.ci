@@ -1,0 +1,58 @@
+.pre-style {
+    color:  white;
+    background-color: #0A2B5D;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+     margin:10px;
+     
+}
+.pre-style1{
+    all:unset;
+}
+.pre-style3{
+    all:unset;
+    margin:10px;
+}
+.pre-style2{
+    margin:10px;
+}
+.pre-style5{
+    margin:10px;
+}
+.pre-style6{
+    color: azure;
+}
+.pre-style4{
+    color:  white;
+    background-color: #0A2B5D;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+     margin:10px;
+}
+
+.my-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .my-button:hover {
+    background-color: lightgray;
+    color: rgb(255, 255, 255);
+    display: flex;
+  justify-content: center;
+  align-items: center
+  }
+  
+  
+  
+  
