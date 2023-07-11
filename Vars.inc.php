@@ -11,25 +11,30 @@ switch ($var){
 		$SlideIndex = '1';
 		$titre = "mondomaine.ci";
         break;
-		case "forfait":
-			$page = "forfaitHeberg.inc.php";
-			$NomPage ="Réserver Votre Nom de Domaine";
-			$SlideIndex = '1';
-			$titre = "mondomaine.ci";
-			break;
-			case "achat":
-				$page = "achat.php";
-				$NomPage ="Réserver Votre Nom de Domaine";
-				$SlideIndex = '1';
-				$titre = "mondomaine.ci";
-				break;
-				case "contact":
-					$page = "contact.inc.php";
-					$NomPage ="Réserver Votre Nom de Domaine";
-					$SlideIndex = '1';
-					$titre = "mondomaine.ci";
-					break;
-	 
+	case "forfait":
+		$page = "forfaitHeberg.inc.php";
+		$NomPage ="Réserver Votre Nom de Domaine";
+		$SlideIndex = '1';
+		$titre = "mondomaine.ci";
+		break;
+	case "achat":
+		$page = "achat.php";
+		$NomPage ="Réserver Votre Nom de Domaine";
+		$SlideIndex = '1';
+		$titre = "mondomaine.ci";
+		break;
+	case "contact":
+		$page = "contact.inc.php";
+		$NomPage ="Réserver Votre Nom de Domaine";
+		$SlideIndex = '1';
+		$titre = "mondomaine.ci";
+		break;
+	case "inscrip":
+		$page = "backinscrip.inc.php";
+		$NomPage ="Réserver Votre Nom de Domaine";
+		$SlideIndex = '1';
+		$titre = "mondomaine.ci";
+		break;
 
 
 	default ;

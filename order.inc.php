@@ -67,7 +67,7 @@ if(isset($_POST['domain'])){
                                  
 							$label = "R&eacuteserver";
                             echo "<pre class='pre-style1'>\n" ."<br>". "\n</pre>\n";
-								echo  "<pre class='pre-style4'>\n" . "Dommaine Disponible" ."                             "."                                      "."                                                     "."                                                  ".'<button type="button" class="btn btn-primary" onclick="mafonction()">' . $label . '</button>' ."\n</pre>\n";
+								echo  "<pre class='pre-style4'>\n" . "Dommaine Disponible" ."                             "."                                      "."                                                     "."      35 000 FCFA/AN      ".'<button type="button" class="btn btn-primary" onclick="mafonction()">' . $label . '</button>' ."\n</pre>\n";
 								echo "<pre class='pre-style2'>\n" . $result . "\n</pre>\n";
 								
 						        
@@ -82,7 +82,7 @@ if(isset($_POST['domain'])){
     
                                 <div class="row">
                                     <div class="col-md-10">
-                                        <input   type="text" name="domain" class="form-control " autocomplete="off" value="<?php echo $domain; ?>"  placeholder="Enter domain name" id="exampleInputEmail1">
+                                        <input   type="text" name="domain" class="form-control " autocomplete="off" value="<?php echo $domain; ?>"  placeholder="Entrer votre nom de domaine" id="exampleInputEmail1">
                                     </div>
 
                                     <div class="col-md-2">
@@ -125,6 +125,6 @@ if(isset($_POST['domain'])){
 
 <script>
 function mafonction() {
-  window.location.href = "login.inc.php";
+  window.location.href = "achat.inc.php";
 }
 </script>

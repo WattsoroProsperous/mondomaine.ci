@@ -51,7 +51,7 @@ if(isset($_POST['domain'])){
                             <form method="POST" action="?md=order">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="text" name="domain" class="form-control " autocomplete="off" value="<?php echo $domain; ?>"  placeholder="Enter domain name" id="exampleInputEmail1">
+                                        <input type="text" name="domain" class="form-control " autocomplete="off" value="<?php echo $domain; ?>"  placeholder="Entrer votre nom de domaine" id="exampleInputEmail1">
                                     </div>
 
                                     <div class="col-md-4">

@@ -1,3 +1,6 @@
+<?php 
+ 
+?>
 <!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com-->
     <html lang="en">
@@ -35,7 +38,7 @@
                         </div>
 
                         <div class="field button-field">
-                            <button type="submit">Se connecter </button>
+                            <button type="submit" nam="submit2"connecter </button>
                         </div>
                     </form>
 
@@ -67,7 +70,7 @@
             <div class="form signup">
                 <div class="form-content">
                     <header>S'inscrire</header>
-                    <form action="" method="post">
+                    <form action="backinscrip.inc.php" method="post">
                     <div class="field input-field">
                             <input type="text" name="nom" placeholder="Nom" class="input" autocomplete="off">
                         </div>
@@ -86,7 +89,7 @@
                         </div>
 
                         <div class="field button-field">
-                            <button type="submit1">S'inscrire </button>
+                            <button type="submit" name="submit1">S'inscrire </button>
                         </div>
                     </form>
 

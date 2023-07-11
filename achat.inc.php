@@ -2,7 +2,9 @@
 
 
  
-<?php include_once('Vars.inc.php'); ?>
+ <?php 
+ require 'db.classe.php';
+ $db = new db() ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,8 +17,8 @@
 		<meta name="keywords" content="WebSite Template" />
 		<meta name="description" content="Porto - Multipurpose Website Template">
 		<meta name="author" content="okler.net">
-		 <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="styleo.css">
+	     
+         <link rel="stylesheet" href="styleo.css">
 
 <!-- UniIcon CDN Link  -->
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -61,6 +63,17 @@
 		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Head Libs -->
+		<script src=https://touchpay.gutouch.com/touchpay/script/prod_touchpay-0.0.1.js  type="text/javascript"></script>
+		<script type="text/javascript">
+			function calltouchpay(){
+				sendPaymentInfos(new Date().getTime(),
+								 'MTTCI9275','Mr1t5RXShfjp5qb1kTZPsOizFLMa1TZxd6DF6VAsfTxAp8a1ma',
+                                 'mtinvestment.com',  'url_redirection_success',
+                                 'url_redirection_failed', 1000,
+                                 'dakar', '','', '',  '');
+			}
+		</script>
+
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 
@@ -119,7 +132,7 @@
 
 
 
-
+</head>
 <body style="background:quaternary">
    
 <header id="header" style="background: #3F33DF" class="header-transparent" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 53, 'stickySetTop': '-53px'}">
@@ -157,7 +170,10 @@
 					</div>
 				</div>
 			</header><br><br> <br><br> <br>  
+<?php
+ var_dump($db->query('SELECT * FROM product'));
 
+?>
 <div class="main">
 
        
@@ -219,7 +235,7 @@
 										 <h3 style="font-family:font-family: Arial, sans-serif; font-size:25px;color:white">Prix: 12000 F HTTC</h3>
 										 <h3 style="font-family:font-family: Arial, sans-serif; font-size:25px;color:white">Tva: 2% </h3>
 										 <h2 style="font-family:font-family: Arial, sans-serif; font-size:30px;color:white">Total: 14500 F</h2>
-										 <button type="submit" onclick="redirection()" class="btn btn-primary">finaliser Votre Commande</button>
+										 <button type="submit" onclick="calltouchpay()" class="btn btn-primary">finaliser Votre Commande</button>
 									<div class="testimonial-arrow-down"></div>
 									 
 								</div>
@@ -236,7 +252,7 @@
 			<!-- redorection -->	
 			<script>
         function redirection() {
-            window.location.href = "main/index-cinet.php";
+            window.location.href = "pment.php";
         }
     </script>
 <!-- Vendor -->
@@ -298,6 +314,7 @@
 
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
+	<script src="main.js"></script>
 </body>
 </body>
 
