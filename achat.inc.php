@@ -4,7 +4,7 @@
  
  <?php 
  require 'db.classe.php';
- $db = new db() ?>
+ $db = new db() ?>        
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +19,7 @@
 		<meta name="author" content="okler.net">
 	     
          <link rel="stylesheet" href="styleo.css">
+		 <link rel="stylesheet" href="paiement.css">
 
 <!-- UniIcon CDN Link  -->
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -36,15 +37,15 @@
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
-		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesh eet" href="vendor/animate/animate.compat.css">
+		<link rel="styleshe      et" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
 		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
-
-		<!-- Theme CSS -->
+		<link rel="stylesheet" hr ef="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" hre f="vendor/magnific-popup/magnific-popup.min.css">
+ 
+ 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="css/theme.css">
-		<link rel="stylesheet" href="css/theme-elements.css">
+ 		<link rel="stylesheet" href="css/theme-elements.css">
 		<link rel="stylesheet" href="css/theme-blog.css">
 		<link rel="stylesheet" href="css/theme-shop.css">
 
@@ -170,91 +171,65 @@
 					</div>
 				</div>
 			</header><br><br> <br><br> <br>  
-<?php
- var_dump($db->query('SELECT * FROM product'));
 
-?>
 <div class="main">
 
-       
-
-        <ul>
-            <li>
-            <i class="icon uil uil-check-square"></i>
-                <div class="progress one">
-                    <p id="lette">1</p>
-                    <i class="uil uil-check"></i>
-                </div>
-                <p class="text">sélectionner</p>
-            </li>
-            <li>
-            <i class="icon uil uil-align-justify"></i>
-                <div class="progress two">
-                    <p id="lette">2</p>
-                    <i class="uil uil-check"></i>
-                </div>
-                <p class="text">Options</p>
-            </li>
-            <li>
-                <i class="icon uil uil-credit-card"></i>
-                <div class="progress three">
-                    <p id="lette">3</p>
-                    <i class="uil uil-check"></i>
-                </div>
-                <p class="text">Récapitulatif</p>
-            </li>
-            <li>
-            <i class="icon uil uil-transaction"></i>
-                <div class="progress four">
-                    <p id="lette">4</p>
-                    <i class="uil uil-check"></i>
-                </div>
-                <p class="text">Paiement</p>
-            </li>
-             
-        </ul>
-
-    </div>
-    <section class="section section-no-background section-no-border mt-0 mb-0" id="testimonials">
-					<div class="container">
-						 
-						<div class="row mt-4">
-							<div class="col-lg-8">
-								<div class="testimonial testimonial-style-4 pb-4 appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="0">
-									 
-										  <h3 style="font-family:font-family: Arial, sans-serif; font-size:20px">Choisir un plan d'hébergement et finaliser votre commande	</h3>
-										  <button type="submit" class="btn btn-primary">Poursuivre</button>
-									<div class="col-md-6 col-lg-3">
-								 
+<?php //PHP ADODB document - made with PHAkt 3.7.1?>
+<section class="call-to-action call-to-action-default with-button-arrow content-align-center ">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 col-lg-9">
+							<div class="call-to-action-content">
+								<h2 class="font-weight-normal text-6 mb-0">Optez pour un plan d'herbegement chez nous</h2>
+								<p class="mb-0">Cliquez sur le bouton poursuivre</p>
 							</div>
-								</div>
-							</div>
-							<div class="col-lg-4" >
-								<div class="testimonial testimonial-style-4 pb-4 appear-animation" style="background:#0A2B5D; " data-appear-animation="fadeInRight" data-appear-animation-delay="0">
-								 
-										 <h3 style="font-family:font-family: Arial, sans-serif; font-size:25px;color:white">Prix: 12000 F HTTC</h3>
-										 <h3 style="font-family:font-family: Arial, sans-serif; font-size:25px;color:white">Tva: 2% </h3>
-										 <h2 style="font-family:font-family: Arial, sans-serif; font-size:30px;color:white">Total: 14500 F</h2>
-										 <button type="submit" onclick="calltouchpay()" class="btn btn-primary">finaliser Votre Commande</button>
-									<div class="testimonial-arrow-down"></div>
-									 
-								</div>
-							</div>
-							 
 						</div>
-						 
-						 
-							 
+						<div class="col-md-3 col-lg-3">
+							<div class="call-to-action-btn">
+								<a href="#" target="_blank" class="btn btn-primary btn-lg text-3 font-weight-semibold px-4 py-3" onclick="redirection()">poursuivre</a><span class="arrow hlb d-none d-md-block" data-appear-animation="rotateInUpLeft" style="top: -40px; left: 70%;"></span>							</div>
+						</div>
 					</div>
-				</section>
- 
+				</div>
+</section>
+
+
+<br>
+				<!--div  div-->
+
+<div class="paiement">
+    <div class="title">
+      <h1>Produits Sélectionnés</h1>
+    </div>
+  <section class="product-list" id="productList">
+    <div class="product" onclick="toggleProduct(this, 'Produit 1', 10000)">
+      <h2>Produit: 01</h2>
+      <p>Prix : 10000 FCFA</p>
+    </div>
+    
+    <!-- Ajoutez d'autres produits ici -->
+    
+  </section>
+  <button class="payment-button" onclick="calltouchpay()">Payer</button>
+  <div class="total" id="totalAmount">Total : 0FCFA</div>
+  <script src="paiement.js"></script>
+</div>
 	 
-			<!-- redorection -->	
-			<script>
-        function redirection() {
-            window.location.href = "pment.php";
-        }
-    </script>
+			<!-- ridirection -->	
+	<script> function redirection() {  window.location.href = "index.php?md=forfait";  }</script>
+
+			<!--function calltouchpay-->
+			<script src=https://touchpay.gutouch.com/touchpay/script/prod_touchpay-0.0.1.js  type="text/javascript"></script>
+		<script type="text/javascript">
+			function calltouchpay(){
+				sendPaymentInfos(new Date().getTime(),
+								 'MTTCI9275','Mr1t5RXShfjp5qb1kTZPsOizFLMa1TZxd6DF6VAsfTxAp8a1ma',
+                                 'mtinvestment.com',  'url_redirection_success',
+                                 'url_redirection_failed', 10000,
+                                 'dakar', '','', '',  '');
+			}
+		</script>
+
+
 <!-- Vendor -->
 <script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
@@ -271,7 +246,11 @@
 	<script src="vendor/vide/jquery.vide.min.js"></script>
 	<script src="vendor/vivus/vivus.min.js"></script>
 	<script src="vendor/particles/particles.min.js"></script>
-	
+
+	<!-- progresss-->
+
+	<script src="progress.js"></script>
+
 		<!-- Vendor -->
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<script src="vendor/jquery.appear/jquery.appear.min.js"></script>

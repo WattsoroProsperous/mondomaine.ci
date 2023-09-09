@@ -15,7 +15,7 @@
                             <div class="overflow-hidden mb-1">
                                 <h2 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0 appear-animation"
                                     data-appear-animation="maskUp" data-appear-animation-delay="100">
-                                    R servez votre nom de domaine.ci en ligne</h2>
+                                    Réservez votre nom de domaine.ci en ligne</h2>
                             </div>
                             <h1 class="text-color-dark font-weight-bold text-9 pb-2 mb-4 appear-animation"
                                 data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Votre
@@ -67,7 +67,7 @@ if(isset($_POST['domain'])){
                                  
 							$label = "R&eacuteserver";
                             echo "<pre class='pre-style1'>\n" ."<br>". "\n</pre>\n";
-								echo  "<pre class='pre-style4'>\n" . "Dommaine Disponible" ."                             "."                                      "."                                                     "."      35 000 FCFA/AN      ".'<button type="button" class="btn btn-primary" onclick="mafonction()">' . $label . '</button>' ."\n</pre>\n";
+								echo  "<pre class='pre-style4'>\n" . "Dommaine Disponible" ."                             "."                                      "."                                                     "."      10 000 FCFA/AN      ".'<button type="button" class="btn btn-primary" onclick="mafonction()">' . $label . '</button>' ."\n</pre>\n";
 								echo "<pre class='pre-style2'>\n" . $result . "\n</pre>\n";
 								
 						        

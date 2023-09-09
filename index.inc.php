@@ -37,7 +37,7 @@ if(isset($_POST['domain'])){
 		$result = lookUpDomain($domain);
 		 
 	} else {
-		$message = "Invalid Input!";
+		$message = "Veiller entrer votre nom de domaine!";
 	}
 }
  

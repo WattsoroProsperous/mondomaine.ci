@@ -1,136 +1,58 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
-@font-face {
-    font-family: pop;
-    src: url(./Fonts/Poppins-Medium.ttf);
-}
-
-.main{
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: pop;
-    flex-direction: column;
-}
- 
- #lette{
-    color: white;
-}
-ul{
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 2px;
-}
-ul li{
+h1{
+    font-family: Arial, sans-serif;}
+ul {
     list-style: none;
+    padding: 0;
     display: flex;
-    flex-direction: column;
+}
+
+li {
+    flex: 1;
+    text-align: center;
+}
+
+.progress {
+    background-color: #ff6600;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
     align-items: center;
-}
-ul li .icon{
-    font-size: 35px;
-    color: #ff6600;
-    margin: 0 150px;
-}
-ul li .text{
-    font-size: 18px;
-    font-weight: 600;
-    color: #ff6600;
-}
-
-/* Progress Div Css  */
-
-ul li .progress{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #0A2B5D;
-    margin: 14px 0;
-    display: grid;
-    place-items: center;
-    color: #ffffff;
     position: relative;
-    cursor: pointer;
 }
-.progress::after{
-    content: " ";
+
+.progress i {
+    display: none;
+}
+
+.text {
+    margin-top: 5px;
+}
+
+.one {
+    width: 25%;
+}
+
+.two {
+    width: 50%;
+}
+
+.three {
+    width: 75%;
+}
+
+.four {
+    width: 100%;
+}
+
+.one p {
+    color: #ffffff;
     position: absolute;
-    width: 305px;
-    height: 10px;
-    background-color: #0A2B5D;
-    right: 30px;
-}
-.one::after{
-    width: 0;
-    height: 0;
-}
-ul li .progress .uil{
-    display: none;
-}
-ul li .progress p{
-     display: flex;
-     margin-top: 10px;
-    font-size: 18px;
-     
-}
-
-/* Active Css  */
-
-ul li .active{
-    background-color: #ff6600;
-    display: grid;
-    place-items: center;
-}
-li .active::after{
-    background-color: #ff6600;
-}
-ul li .active p{
-    display: none;
-}
-ul li .active .uil{
-    font-size: 20px;
-    display: flex;
-}
-
-/* Responsive Css  */
-
-@media (max-width: 980px) {
-    ul{
-        flex-direction: column;
-    }
-    ul li{
-        flex-direction: row;
-    }
-    ul li .progress{
-        margin: 0 30px;
-    }
-    .progress::after{
-        width: 5px;
-        height: 55px;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
-    .one::after{
-        height: 0;
-    }
-    ul li .icon{
-        margin: 15px 0;
-    }
-}
-
-@media (max-width:600px) {
-    .head .head_1{
-        font-size: 24px;
-    }
-    .head .head_2{
-        font-size: 16px;
-    }
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
